@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,28 +36,33 @@ class ViewController: UIViewController {
         
     }
     
+    func changeColor() {
+        colorView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
+    }
     
+}
+
+// MARK: - Configuration Slider Action
+
+extension ViewController {
     
     @IBAction func redSliderAction() {
         redLabel.text = String(NSString(format: "%.2f", redSlider.value))
-        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
-        
+        changeColor()
     }
     
     @IBAction func greenSliderAction() {
         greenLabel.text = String(NSString(format: "%.2f", greenSlider.value))
-        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: 0, alpha: 1)
-    
+        changeColor()
     }
     
     @IBAction func blueSliderAction() {
         blueLabel.text = String(NSString(format: "%.2f", blueSlider.value))
-        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+        changeColor()
     }
-    
-    
-    
-    
-    
 }
-
