@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA22A1DF27EE6C1300F535F3 /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22A1DE27EE6C1300F535F3 /* StartingViewController.swift */; };
 		FA9A1E3727C50A23009BF6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9A1E3627C50A23009BF6CB /* AppDelegate.swift */; };
 		FA9A1E3927C50A23009BF6CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9A1E3827C50A23009BF6CB /* SceneDelegate.swift */; };
-		FA9A1E3B27C50A23009BF6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9A1E3A27C50A23009BF6CB /* ViewController.swift */; };
+		FA9A1E3B27C50A23009BF6CB /* ColorizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9A1E3A27C50A23009BF6CB /* ColorizedViewController.swift */; };
 		FA9A1E3E27C50A23009BF6CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9A1E3C27C50A23009BF6CB /* Main.storyboard */; };
 		FA9A1E4027C50A25009BF6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9A1E3F27C50A25009BF6CB /* Assets.xcassets */; };
 		FA9A1E4327C50A25009BF6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9A1E4127C50A25009BF6CB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA22A1DE27EE6C1300F535F3 /* StartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
 		FA9A1E3327C50A23009BF6CB /* Task 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9A1E3627C50A23009BF6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9A1E3827C50A23009BF6CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA9A1E3A27C50A23009BF6CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA9A1E3A27C50A23009BF6CB /* ColorizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedViewController.swift; sourceTree = "<group>"; };
 		FA9A1E3D27C50A23009BF6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA9A1E3F27C50A25009BF6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA9A1E4227C50A25009BF6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 			children = (
 				FA9A1E3627C50A23009BF6CB /* AppDelegate.swift */,
 				FA9A1E3827C50A23009BF6CB /* SceneDelegate.swift */,
-				FA9A1E3A27C50A23009BF6CB /* ViewController.swift */,
+				FA22A1DE27EE6C1300F535F3 /* StartingViewController.swift */,
+				FA9A1E3A27C50A23009BF6CB /* ColorizedViewController.swift */,
 				FA9A1E3C27C50A23009BF6CB /* Main.storyboard */,
 				FA9A1E3F27C50A25009BF6CB /* Assets.xcassets */,
 				FA9A1E4127C50A25009BF6CB /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA9A1E3B27C50A23009BF6CB /* ViewController.swift in Sources */,
+				FA9A1E3B27C50A23009BF6CB /* ColorizedViewController.swift in Sources */,
 				FA9A1E3727C50A23009BF6CB /* AppDelegate.swift in Sources */,
+				FA22A1DF27EE6C1300F535F3 /* StartingViewController.swift in Sources */,
 				FA9A1E3927C50A23009BF6CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +221,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "ColorizedApp/Task 2/info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -272,6 +278,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "ColorizedApp/Task 2/info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -292,6 +300,7 @@
 				DEVELOPMENT_TEAM = HJP652P53Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Task 2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ColorizedApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -303,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AndreyZhivotov.Task-2";
+				PRODUCT_BUNDLE_IDENTIFIER = AndreyZhivotov.ColorizedApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -321,6 +330,7 @@
 				DEVELOPMENT_TEAM = HJP652P53Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Task 2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = ColorizedApp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AndreyZhivotov.Task-2";
+				PRODUCT_BUNDLE_IDENTIFIER = AndreyZhivotov.ColorizedApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
